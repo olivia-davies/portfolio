@@ -1,0 +1,221 @@
+html {
+    background-image: url(Assets/BG/MobileBG.png);
+    max-width: inherit;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+.main-head {
+    background-image: url(Assets/BG/HeaderBG.png);
+}
+
+h1 {
+    padding-top: 30px;
+    padding-left: 10px;
+    font-family: Museo-Sans, sans-serif;
+    font-weight:300;
+    font-size: 5em;
+    color: white;
+}
+
+nav ul{
+    font-family: Museo-Sans, sans-serif;
+    list-style: none;
+    font-style: oblique;
+    color: white;
+    margin: 0 2px;
+    padding: 0 0 20 0;
+    display: flex;
+    justify-content: space-around; 
+/*max-width: 600px;*/
+}
+img{
+    opacity: 0.33;
+    width: 100%;
+    max-width: 700px; 
+    margin: auto;
+
+}
+
+.portfolio {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin: auto;
+    width: 455px;
+}
+
+.childcare {
+    content: url(Assets/IMG/preschool_logo.jpg);
+    width: 280px;
+    height: 300px;
+}
+
+#childcare-body, #fac-body {
+    font-family: Proxima Nova, sans-serif;
+    font-size: .75em;
+    font-weight: 200;
+    padding-top: 40px;
+    width: 75%;
+    margin: auto;
+    display: none;
+}
+
+.ewu {
+    content: url(Assets/IMG/1%20-%20Login.png);
+    width: 170px;
+    margin-right: 0;
+    height: 300px;
+    
+}
+
+.shondra {
+    content: url(Assets/IMG/shondra.jpg);
+    height:150px;
+    width: 170px;
+}
+
+.fac {
+    content: url(Assets/IMG/welcomeheader_fac.png);
+    height:150px;
+    width: 280px;
+}
+
+.about-me img {
+    opacity: inherit;
+    width:15%;
+    padding-top: 40px;
+    display: inline-block;
+}
+
+.about-me p {
+    padding: 0px 40px 0 40px;
+    max-width: 455px;
+    margin: auto;
+}
+
+.about-me {
+    text-align: center;
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 300;
+    font-size: .75em;
+    line-height: 1.5;
+}
+
+#hint {
+    font-size: .5em;
+    font-style: oblique;
+    padding: 10px 40 0 40px;
+}
+
+.soc {
+    list-style-type: none;
+    flex-direction: row;
+    max-width: 500px;
+    padding-top: 20px;
+}
+
+#contact-me ul{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.soc-mail {
+    content: url(Assets/IMG/mail_icon);
+    width: 40px;
+    height: 40px;
+}
+
+.soc-facebook {
+    content: url(Assets/IMG/facebook_icon.png);
+    width: 40px;
+    height: 40px;
+
+}
+.soc-insta {
+    content: url(Assets/IMG/insta_icon);
+     width: 40px;
+    height: 40px;
+}
+
+#bottom-button {
+    padding-top: 20px;
+    content: url(Assets/IMG/back_button.png);
+    width: 50%;
+    margin: auto;
+    max-width: 200px;
+    
+
+}
+
+
+
+@media (min-width: 701px) {
+    
+    .main-head {
+         background-image: url(Assets/BG/HeaderBG.png);
+        height: 680px;
+        width: 680px;
+        max-width: 400px;
+    }
+    
+    h1{
+        padding-left: 35px;
+    }
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    img, #bottom-button, nav {
+        display: none;
+    }
+
+    .about-me {
+        position: absolute;
+        top: 250px;
+        left: 30px;
+        width: 300px;
+        color: white;
+    }
+    .about-me img{
+        padding-bottom: 20px;
+        width: 90px;
+    }
+    .about-me p {
+        text-align: left;
+        padding: 0px 0px 0 20px;
+    }
+    
+    #hint {
+        padding: 20px 40 0 20px;
+    }
+    
+    .soc {
+        position: absolute;
+        padding-right: 30px;
+        top: 600px;
+        left: 32px;
+        width: 246px;
+        filter: brightness(2);}
+
+    
+    .portfolio {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-content: flex-start;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+        
+    }
+    
+    .ewu, .shondra, .childcare, .fac {
+       padding-right: 20px;
+        padding-bottom: 20px
+    }
+}
